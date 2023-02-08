@@ -1,0 +1,131 @@
+body {
+    background-image: url(hatterek/hatter1.jpg);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'h h h'
+    'n n n'
+    'a a as'
+    'f f f'
+    ;
+    background-color: white;
+    width: 80%;
+    margin: auto;
+
+
+
+}
+
+
+h1 {
+    letter-spacing: 5px;
+    font-size: 4vw;
+    text-align: left;
+    font-weight: bolder;
+}
+
+
+nav {
+    grid-area: n;
+
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: green;
+  }
+  
+  li {
+    float: left;
+    padding: 5px;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+li a:hover {
+background-color: greenyellow;
+color: black;
+
+}
+
+
+  article {
+grid-area: a;
+margin: 15px;
+text-align: justify;
+  }
+
+  h2 {
+border-bottom: 4px solid green ;
+
+
+  }
+
+  article ol {
+float: left;
+
+  }
+
+
+  article img {
+
+    float: right;
+    width: 200px;
+    border: 1px solid gray;
+    margin-right: 5px;
+    margin-left: 12px;
+    border-radius: 5%;
+  }
+
+  aside {
+grid-area: as;
+
+
+  }
+
+  aside img {
+
+    width: 100%;
+  }
+
+  footer {
+grid-area: f;
+background-color: green;
+
+  }
+
+
+
+  @media only screen and (max-width: 600px) {
+    
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    'h'
+    'n'
+    'a'
+    'as'
+    'f'
+    ;
+
+}
+
+
+  }
